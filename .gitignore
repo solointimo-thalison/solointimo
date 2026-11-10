@@ -1,0 +1,16 @@
+node_modules/
+dist/
+.netlify/
+.env
+.env.*
+npm-debug.log*
+yarn-debug.log*
+pnpm-debug.log*
+.DS_Store
+Thumbs.db
+
+# Arquivos herdados do editor e do servidor do projeto original
+/app.tar.gz
+/.version
+/knip.json
+/apps/web/plugins/
