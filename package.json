@@ -3,10 +3,10 @@
 	"version": "0.0.0",
 	"private": true,
 	"scripts": {
-		"dev": "npm run dev --workspace apps/web",
-		"build": "npm run build --workspace apps/web",
-		"lint": "npm run lint --workspace apps/web",
-		"typecheck": "npm run typecheck --workspace apps/web"
+		"dev": "npm --prefix apps/web run dev",
+		"build": "npm --prefix apps/web run build",
+		"lint": "npm --prefix apps/web run lint",
+		"typecheck": "npm --prefix apps/web run typecheck"
 	},
 	"workspaces": [
 		"apps/*"
