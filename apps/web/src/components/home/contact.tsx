@@ -1,0 +1,6 @@
+import { ArrowUpRight, Instagram, Facebook, MessageCircle, MapPin } from 'lucide-react';
+import { whatsappUrl, instagramUrl, facebookUrl, storeAddress, storeMapsUrl } from '@/data/categories';
+
+export function Contact() {
+  return <section id="contato" className="contact" aria-labelledby="contact-title"><span className="eyebrow">VAMOS CONVERSAR?</span><h2 id="contact-title">Seu próximo essencial<br />começa com uma <em>conversa.</em></h2><p>Quer conhecer as opções ou tirar uma dúvida?<br />Fale com a Solo Intimo. Estamos a um clique de você.</p><a className="button button-light" href={whatsappUrl} target="_blank" rel="noopener noreferrer"><MessageCircle size={19} /> Chamar no WhatsApp <ArrowUpRight size={18} /></a><span className="phone">(92) 98115-1212</span><a className="store-address" href={storeMapsUrl} target="_blank" rel="noopener noreferrer"><MapPin size={16} /> {storeAddress}</a><div className="contact-social"><span>ACOMPANHE A SOLO INTIMO</span><a href={instagramUrl} target="_blank" rel="noopener noreferrer"><Instagram size={18} /> Instagram <ArrowUpRight size={14} /></a><a href={facebookUrl} target="_blank" rel="noopener noreferrer"><Facebook size={18} /> Facebook <ArrowUpRight size={14} /></a></div></section>;
+}

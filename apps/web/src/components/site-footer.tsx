@@ -1,0 +1,6 @@
+import { Instagram, Facebook, ArrowUpRight, MapPin } from 'lucide-react';
+import { brandLogo, instagramUrl, facebookUrl, whatsappUrl, storeAddress, storeMapsUrl } from '@/data/categories';
+
+export function SiteFooter() {
+  return <footer className="site-footer"><div className="footer-top"><a href="#inicio" className="brand-logo brand-logo-footer" aria-label="Solo Intimo — início"><img src={brandLogo} alt="Solo Intimo" /></a><p>Delicadeza, conforto e cuidado.<br />Para você. Para toda a família.</p><div className="footer-links"><a href="#categorias">Categorias</a><a href="#sobre">Sobre a loja</a><a href={whatsappUrl} target="_blank" rel="noopener noreferrer">WhatsApp <ArrowUpRight size={14} /></a></div><div className="footer-social"><a href={instagramUrl} aria-label="Instagram da Solo Intimo" target="_blank" rel="noopener noreferrer"><Instagram size={20} /></a><a href={facebookUrl} aria-label="Facebook da Solo Intimo" target="_blank" rel="noopener noreferrer"><Facebook size={20} /></a><span>@solointimo</span></div></div><a className="footer-address" href={storeMapsUrl} target="_blank" rel="noopener noreferrer"><MapPin size={14} /> {storeAddress}</a><div className="footer-bottom"><span>© {new Date().getFullYear()} Solo Intimo. Todos os direitos reservados.</span><span>Uma vitrine para descobrir. Uma conversa para escolher.</span></div></footer>;
+}
