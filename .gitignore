@@ -14,3 +14,4 @@ Thumbs.db
 /.version
 /knip.json
 /apps/web/plugins/
+.react-router/
